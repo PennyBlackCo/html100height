@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Layout</title>
+	
+	<style>
+	header, footer {
+		height: 100px;
+		background: blue;
+	}
+	
+	#wrapper-aside {
+		clear:left;
+		float:left;
+		width:100%;
+		overflow:hidden;
+		background:green;
+	}
+	
+	#wrapper-content {
+		clear:left;
+		float:left;
+		width:100%;
+		background:red;
+		position:relative;
+		right: 20%;
+	}
+	#wrapper-nav {
+		float:left;
+		width:100%;
+		position:relative;
+		right: 60%;
+		background:yellow;
+	}
+	nav {
+		float:left;
+		width:20%;
+		position:relative;
+		left:80%;
+		overflow:hidden;
+	}
+	#container {
+		float:left;
+		width:80%;
+		position:relative;
+		left:80%;
+		overflow:hidden;
+	}
+	
+	#container #content {
+		float: left;
+		width: 75%;
+	}
+	
+	#container aside {
+		float: right;
+		width: 25%;
+	}
+	
+	footer {
+		clear:both;
+		float:left;
+		width:100%;
+	}
+	
+	@media (max-width: 1024px) {
+	
+		#container aside, #container #content {
+			float: none;
+			width: auto;
+		}
+		#container aside {
+			background: rgba(255,255,255,0.5);
+		}
+		#wrapper-aside {
+			background: red;
+		}
+	
+	}
+	
+	
+	</style>
+</head>
+
+<body>
+
+	<header></header>
+	
+	<div id="wrapper-aside">
+	<div id="wrapper-content">
+		<div id="wrapper-nav">
+			<nav>
+				<h2>Navigation</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae posuere metus. Aliquam imperdiet dapibus pretium. Sed nisi ipsum, pulvinar eu tincidunt non, faucibus eu diam. Suspendisse in leo metus, vel tincidunt ante. Ut non convallis nunc. Duis sodales gravida feugiat. Curabitur pharetra velit et ligula dapibus porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam consectetur mattis vestibulum.</p>
+				<p>Mauris et lacus quam, in ultricies quam. Phasellus varius massa ultricies velit consequat sodales. Fusce tincidunt felis vel est vulputate facilisis. Proin dapibus nulla ut lectus mollis tincidunt. Duis condimentum sapien in nulla eleifend sodales eleifend tellus posuere. Sed et dolor et mauris pellentesque placerat dignissim lacinia dui. Praesent eu nunc lorem. Aenean tincidunt sollicitudin molestie. Nam et arcu mauris, vitae bibendum risus. Proin vehicula volutpat velit sed venenatis. Nunc pellentesque velit vitae quam aliquet bibendum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae posuere metus. Aliquam imperdiet dapibus pretium. Sed nisi ipsum, pulvinar eu tincidunt non, faucibus eu diam. Suspendisse in leo metus, vel tincidunt ante. Ut non convallis nunc. Duis sodales gravida feugiat. Curabitur pharetra velit et ligula dapibus porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam consectetur mattis vestibulum.</p>
+				<p>Mauris et lacus quam, in ultricies quam. Phasellus varius massa ultricies velit consequat sodales. Fusce tincidunt felis vel est vulputate facilisis. Proin dapibus nulla ut lectus mollis tincidunt. Duis condimentum sapien in nulla eleifend sodales eleifend tellus posuere. Sed et dolor et mauris pellentesque placerat dignissim lacinia dui. Praesent eu nunc lorem. Aenean tincidunt sollicitudin molestie. Nam et arcu mauris, vitae bibendum risus. Proin vehicula volutpat velit sed venenatis. Nunc pellentesque velit vitae quam aliquet bibendum.</p>
+			</nav>
+			<div id="container">
+				<div id="content">
+					<h2>Main Content</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae posuere metus. Aliquam imperdiet dapibus pretium. Sed nisi ipsum, pulvinar eu tincidunt non, faucibus eu diam. Suspendisse in leo metus, vel tincidunt ante. Ut non convallis nunc. Duis sodales gravida feugiat. Curabitur pharetra velit et ligula dapibus porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam consectetur mattis vestibulum.</p>
+					<p>Mauris et lacus quam, in ultricies quam. Phasellus varius massa ultricies velit consequat sodales. Fusce tincidunt felis vel est vulputate facilisis. Proin dapibus nulla ut lectus mollis tincidunt. Duis condimentum sapien in nulla eleifend sodales eleifend tellus posuere. Sed et dolor et mauris pellentesque placerat dignissim lacinia dui. Praesent eu nunc lorem. Aenean tincidunt sollicitudin molestie. Nam et arcu mauris, vitae bibendum risus. Proin vehicula volutpat velit sed venenatis. Nunc pellentesque velit vitae quam aliquet bibendum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae posuere metus. Aliquam imperdiet dapibus pretium. Sed nisi ipsum, pulvinar eu tincidunt non, faucibus eu diam. Suspendisse in leo metus, vel tincidunt ante. Ut non convallis nunc. Duis sodales gravida feugiat. Curabitur pharetra velit et ligula dapibus porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam consectetur mattis vestibulum.</p>
+					<p>Mauris et lacus quam, in ultricies quam. Phasellus varius massa ultricies velit consequat sodales. Fusce tincidunt felis vel est vulputate facilisis. Proin dapibus nulla ut lectus mollis tincidunt. Duis condimentum sapien in nulla eleifend sodales eleifend tellus posuere. Sed et dolor et mauris pellentesque placerat dignissim lacinia dui. Praesent eu nunc lorem. Aenean tincidunt sollicitudin molestie. Nam et arcu mauris, vitae bibendum risus. Proin vehicula volutpat velit sed venenatis. Nunc pellentesque velit vitae quam aliquet bibendum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae posuere metus. Aliquam imperdiet dapibus pretium. Sed nisi ipsum, pulvinar eu tincidunt non, faucibus eu diam. Suspendisse in leo metus, vel tincidunt ante. Ut non convallis nunc. Duis sodales gravida feugiat. Curabitur pharetra velit et ligula dapibus porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam consectetur mattis vestibulum.</p>
+					<p>Mauris et lacus quam, in ultricies quam. Phasellus varius massa ultricies velit consequat sodales. Fusce tincidunt felis vel est vulputate facilisis. Proin dapibus nulla ut lectus mollis tincidunt. Duis condimentum sapien in nulla eleifend sodales eleifend tellus posuere. Sed et dolor et mauris pellentesque placerat dignissim lacinia dui. Praesent eu nunc lorem. Aenean tincidunt sollicitudin molestie. Nam et arcu mauris, vitae bibendum risus. Proin vehicula volutpat velit sed venenatis. Nunc pellentesque velit vitae quam aliquet bibendum.</p>
+					</div>
+					<aside>
+						<h3>Aside</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae posuere metus. Aliquam imperdiet dapibus pretium. Sed nisi ipsum, pulvinar eu tincidunt non, faucibus eu diam. Suspendisse in leo metus, vel tincidunt ante. Ut non convallis nunc. Duis sodales gravida feugiat. Curabitur pharetra velit et ligula dapibus porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam consectetur mattis vestibulum.</p>
+					<p>Mauris et lacus quam, in ultricies quam. Phasellus varius massa ultricies velit consequat sodales. Fusce tincidunt felis vel est vulputate facilisis. Proin dapibus nulla ut lectus mollis tincidunt. Duis condimentum sapien in nulla eleifend sodales eleifend tellus posuere. Sed et dolor et mauris pellentesque placerat dignissim lacinia dui. Praesent eu nunc lorem. Aenean tincidunt sollicitudin molestie. Nam et arcu mauris, vitae bibendum risus. Proin vehicula volutpat velit sed venenatis. Nunc pellentesque velit vitae quam aliquet bibendum.</p>
+				</aside>
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<footer></footer>
+
+</body>
+</html>
